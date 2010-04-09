@@ -1,0 +1,373 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\POIView.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\POIView.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 POIView"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "POIView 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_POIVIEW_DIALOG DIALOGEX 0, 0, 480, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "POI 查看"
+MENU IDR_MENU
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDITSTR,7,71,120,16,ES_AUTOHSCROLL
+    GROUPBOX        "检索方式",IDC_STATIC,7,16,119,34
+    COMBOBOX        IDC_COMBOMODE,11,29,110,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "要检索的字符串",IDC_STATIC,7,59,68,8
+    LTEXT           "Static",IDC_STATUS,7,221,184,9
+    PUSHBUTTON      "开始",IDC_OK,7,189,116,23
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,132,175,341,42
+    EDITTEXT        IDC_EDIT2,10,109,49,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,74,109,49,16,ES_AUTOHSCROLL
+    LTEXT           "周边检索坐标(x,y)",IDC_STATIC,7,93,84,13
+    CONTROL         "List1",IDC_POILIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,132,0,341,173
+    LTEXT           "Static",IDC_CURAREA,210,224,134,11
+    LTEXT           "Static",IDC_CURASSOR,350,221,123,13
+END
+
+IDD_TREE DIALOG DISCARDABLE  100, 100, 263, 263
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "树形列表"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,7,249,249
+END
+
+IDD_SETAREA DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置区域"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,77,50,14
+    COMBOBOX        IDC_CBPROVINCE,21,27,152,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CBCITY,21,41,152,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBCOUNTRY,21,54,151,67,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "设置当前区域",IDC_STATIC,22,14,74,10
+END
+
+IDD_SETASSORT DIALOG DISCARDABLE  0, 0, 187, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置分类"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,84,50,14
+    COMBOBOX        IDC_CBSORT1,19,28,129,122,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBSORT2,19,45,129,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBSORT3,19,61,130,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "设置当前分类:",IDC_STATIC,40,15,79,9
+END
+
+IDD_SEARCHMODE DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置检索方式"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,77,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "POIView Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "POIView\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "POIView.EXE\0"
+            VALUE "ProductName", "POIView 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_POIVIEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 473
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_TREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_SETAREA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SETASSORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_SEARCHMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开文件...",                 ID_OPENFILE
+        MENUITEM "POI内部逻辑测试",             ID_TESTINNERLOGIC
+        MENUITEM "POI用例测试",                 ID_EXAMPLETEST
+        MENUITEM "设置当前地区",                ID_CURRENTAREA
+        MENUITEM "设置当前分类",                ID_CURRENTASSORT
+        MENUITEM "设置周边设置范围",            ID_AROUNDEX
+    END
+    POPUP "操作"
+    BEGIN
+        MENUITEM "分类表...",                   ID_ASSORT
+        MENUITEM "地区表...",                   ID_ADCODE
+    END
+    POPUP "工具"
+    BEGIN
+        MENUITEM "打开地图选择坐标",            ID_OPENARDMAP
+        MENUITEM "POI版本信息",                 ID_VERSION
+        MENUITEM "精确打印POI报表",             ID_REPORT
+    END
+END
+
+IDR_POPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "选择"
+    BEGIN
+        MENUITEM "设为当前",                    ID_SEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_POIVIEW_DIALOG DLGINIT
+BEGIN
+    IDC_COMBOMODE, 0x403, 12, 0
+0x4f50, 0xc349, 0xb3fb, 0xbcc6, 0xcbec, 0x00f7, 
+    IDC_COMBOMODE, 0x403, 12, 0
+0x4f50, 0xc649, 0xd2b4, 0xbcf4, 0xcbec, 0x00f7, 
+    IDC_COMBOMODE, 0x403, 13, 0
+0xb0be, 0xe3b5, 0xfbc3, 0xc6b3, 0xecbc, 0xf7cb, "\000" 
+    IDC_COMBOMODE, 0x403, 13, 0
+0xb0be, 0xe3b5, 0xb4c6, 0xf4d2, 0xecbc, 0xf7cb, "\000" 
+    IDC_COMBOMODE, 0x403, 9, 0
+0xdcd6, 0xdfb1, 0xecbc, 0xf7cb, "\000" 
+    IDC_COMBOMODE, 0x403, 24, 0
+0xc0b5, 0xb7c2, 0xfbc3, 0xc6b3, 0xecbc, 0xf7cb, 0xbc2f, 0xbdb0, 0xb2bb, 
+0xc2e6, 0xbfb7, 0x00da, 
+    IDC_COMBOMODE, 0x403, 24, 0
+0xc0b5, 0xb7c2, 0xb4c6, 0xf4d2, 0xecbc, 0xf7cb, 0xbc2f, 0xbdb0, 0xb2bb, 
+0xc2e6, 0xbfb7, 0x00da, 
+    IDC_COMBOMODE, 0x403, 24, 0
+0xe9b2, 0xb4bf, 0xb3c4, 0xd8b5, 0xf8c7, 0x4f50, 0xc449, 0xbeb3, 0xccdf, 
+0xb7e5, 0xc0d6, 0x00e0, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 POIView(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TESTINNERLOGIC       "图标、英文完整性,周边设置是否对应,详细地区是否对应..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\POIView.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
