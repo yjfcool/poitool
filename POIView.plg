@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: POIView - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\mathine\LOCALS~1\Temp\RSP267.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/POIView.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\POI\POI解析\POIInfo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\mathine\LOCALS~1\Temp\RSP267.tmp" 
+Creating temporary file "C:\DOCUME~1\mathine\LOCALS~1\Temp\RSP268.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/POIView.pdb" /debug /machine:I386 /out:"Debug/POIView.exe" /pdbtype:sept 
+".\Debug\area_tree.obj"
+".\Debug\asor_tree.obj"
+".\Debug\File.obj"
+".\Debug\geo_pane.obj"
+".\Debug\mem_block.obj"
+".\Debug\mem_cache.obj"
+".\Debug\pane_mem.obj"
+".\Debug\POIInfo.obj"
+".\Debug\POIView.obj"
+".\Debug\POIViewDlg.obj"
+".\Debug\SetArea.obj"
+".\Debug\SetAssort.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TreeDlg.obj"
+".\Debug\decode.obj"
+".\Debug\FileLoger.obj"
+".\Debug\Loger.obj"
+".\Debug\alloc_exception.obj"
+".\Debug\base_exception.obj"
+".\Debug\file_exception.obj"
+".\Debug\POIView.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\mathine\LOCALS~1\Temp\RSP268.tmp"
+<h3>Output Window</h3>
+Compiling...
+POIInfo.cpp
+e:\poi\poi解析\poiinfo.h(135) : warning C4290: C++ Exception Specification ignored
+e:\poi\poi解析\math1.h(75) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+E:\POI\POI解析\POIInfo.cpp(145) : warning C4018: '>' : signed/unsigned mismatch
+Linking...
+
+
+
+<h3>Results</h3>
+POIView.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>
